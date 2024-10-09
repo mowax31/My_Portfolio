@@ -1,0 +1,31 @@
+/*
+  theames
+  cse -> black
+  mech -> white
+*/
+
+
+/* navbar */
+.nav-bar {
+  height: 60px;
+  width: 98%;
+  background-color: silver;
+  border-radius: 7px;
+}
+
+/* About me */
+.mr-abt{
+  height: 200px;
+  width : 96%;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+/* Education */
+
+.mr-edu {
+  height: 600px;
+  width : 96%;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}

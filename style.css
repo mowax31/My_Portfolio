@@ -1,0 +1,541 @@
+html {
+  background-color: black;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mtx {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#nav-ls{
+  float: right;
+}
+
+#nav-ls li {
+  display: inline;
+  color: white;
+  padding-right: 50px;
+  font-family: Courier;
+  list-style-type: none;
+}
+
+#kr{
+  text-decoration: none;
+  color: white;
+}
+#kr:hover{
+    text-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 30px whitesmoke;
+}
+
+.prof-bg {
+  position: absolute;
+  top : 0;
+  width: 1320px;
+  height: 500px;
+  margin: 90px;
+  padding: inherit;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+#imggg {
+  position: absolute;
+  top: 0;
+  height: 200px; 
+  width: 200px;
+  margin: auto;
+  margin-left: 200px;
+  margin-top: 120px;
+  border-radius: 20px;
+  border: 5px solid #FFFFFF;
+}
+
+.mycontactinfo{
+  position: absolute;
+  top : 0;
+  margin: auto;
+  margin-left: 550px;
+  margin-top: 190px;
+}
+
+#rxrxrx{
+  font-size: 20px;
+  font-family: Courier;
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+}
+
+#rxrxrx:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
+.prof-info-bio {
+  position: absolute;
+  top : 0;
+  width: 340px;
+  height: 80px;
+  margin: auto;
+  margin-top: 470px;
+  margin-left: 130px;
+  padding: inherit;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: -10px 15px 0px 2px rgba(0, 0, 0, 0.37);
+}
+
+#cio-txt {
+  color: white;
+  font-family: Courier;
+  padding: 30px;
+  font-size: 16px;
+}
+
+#hisx{
+  position: absolute;
+  top: 0;
+  color: white;
+  font-family: monospace;
+  margin: auto;
+  margin-left: 930px;
+  margin-top: 160px;
+}
+
+/*.hireme {
+  position: absolute;
+  top: 0;
+}
+*/
+#a-href-ik {
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    padding: 15px 30px;
+    color: #00FF40;
+    margin: auto;
+    margin-left: 1250px;
+    margin-top: 500px;
+    text-decoration: none;
+    font-size: 16px;
+    overflow: hidden;
+    transition: 0.2s;
+    text-shadow: 0 0 10px #00FF40, 0 0 20px #00FF40, 0 0 30px #00FF40;
+}
+
+#a-href-ik span{
+    position: absolute;
+    display: block;
+}
+
+#a-href-ik span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,green);
+
+}
+
+#a-href-ik:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+#a-href-ik span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(270deg,transparent,green);
+
+}
+
+#a-href-ik:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#a-href-ik span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(180deg,transparent,green);
+
+}
+
+#a-href-ik:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#a-href-ik span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(360deg,transparent,green);
+}
+
+#a-href-ik:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+#a-href-ik:hover{
+    color: gray;
+    background: #00FF40;
+    transition-delay: 1s;
+    box-shadow: 0 0 10px #00FF40, 0 0 40px #00FF40, 0 0 80px #00FF40;
+}
+
+#static-txt{
+  position: absolute;
+  top: 0;
+  font-family: monospace;
+  color: grey;
+  margin: auto;
+  margin-left: 960px;
+  margin-top: 210px;
+}
+/*
+#static-txt span:nth-child(1){
+  color: green;
+  text-shadow: 0 0 10px green;
+}
+
+#static-txt span:nth-child(2){
+  color: green;
+  text-shadow: 0 0 10px green;
+}
+
+#static-txt span:nth-child(3){
+  color: green;
+  text-shadow: 0 0 10px green;
+}
+
+#static-txt span:nth-child(4){
+  color: green;
+  text-shadow: 0 0 10px green;
+}
+
+#static-txt span:nth-child(5){
+  color: green;
+  text-shadow: 0 0 10px green;
+}
+
+#static-txt span:nth-child(6){
+  color: green;
+  text-shadow: 0 0 10px green;
+}
+*/
+
+#myname {
+  position: absolute;
+  top: 0;
+  font-family: monospace;
+  font-size: 32px;
+  margin: auto;
+  margin-left: 200px;
+  margin-top: 350px;
+  color: grey;
+}
+
+#myname span:nth-child(1){
+  color: whitesmoke;
+  text-shadow: 0 0 10px whitesmoke;
+}
+
+#tyty, #ytyt{
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+#tyty {
+  color: #CC0000;
+  text-shadow: 0 0 10px #CC0000,
+                0 0 20px #CC0000,
+                0 0 30px #CC0000;
+  margin: auto;
+  margin-top: 400px;
+  margin-left: 220px
+
+}
+
+#ytyt{
+  color: white;
+  text-shadow: 0 0 10px whitesmoke,
+                0 0 20px whitesmoke,
+                0 0 30px whitesmoke;
+                margin: auto;
+                margin-top: 430px;
+                margin-left: 200px
+}
+
+#cici{
+  position: absolute;
+  top: 0;
+  margin: auto;
+  margin-left: 920px;
+  margin-top: 300px;
+  color: whitesmoke;
+  font-family: monospace;
+  font-size: 23px;
+}
+
+#cici span:nth-child(1){
+
+}
+
+#cici span:nth-child(2){
+
+}
+
+/* iphone */
+@media only screen
+  and (min-device-width: 390px)
+  and (max-device-width: 828px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    .prof-bg {
+      position: absolute;
+      top : 0;
+      width: 870px;
+      height: 2750px;
+      margin: 90px;
+      padding: inherit;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    }
+
+    #myname {
+      position: absolute;
+      top: 0;
+      font-family: monospace;
+      font-size: 32px;
+      margin: auto;
+      margin-left: 600px;
+      margin-top: 2000px;
+      color: grey;
+    }
+
+    #myname span:nth-child(1){
+      color: whitesmoke;
+      text-shadow: 0 0 10px whitesmoke;
+    }
+
+    .mycontactinfo{
+      position: absolute;
+      top : 0;
+      margin: auto;
+      margin-left: 550px;
+      margin-top: 2000px;
+    }
+
+    #hisx{
+      position: absolute;
+      top: 0;
+      color: white;
+      font-family: monospace;
+      margin: auto;
+      margin-left: 930px;
+      margin-top: 1600px;
+    }
+
+    #static-txt{
+      position: absolute;
+      top: 0;
+      font-family: monospace;
+      color: grey;
+      margin: auto;
+      margin-left: 960px;
+      margin-top: 1210px;
+    }
+
+    /* cici */
+    #cici{
+      position: absolute;
+      top: 0;
+      margin: auto;
+      margin-left: 920px;
+      margin-top: 1300px;
+      color: whitesmoke;
+      font-family: monospace;
+      font-size: 23px;
+    }
+
+    #cici span:nth-child(1){
+
+    }
+
+    #cici span:nth-child(2){
+
+    }
+    /*tyty -> mechanical  ytyt -> cse*/
+    #tyty, #ytyt{
+      position: absolute;
+      top: 0;
+      font-size: 16px;
+      font-family: monospace;
+    }
+
+    #tyty {
+      color: #CC0000;
+      text-shadow: 0 0 10px #CC0000,
+                    0 0 20px #CC0000,
+                    0 0 30px #CC0000;
+      margin: auto;
+      margin-top: 1950px;
+      margin-left: 220px
+
+    }
+
+    #ytyt{
+      color: white;
+      text-shadow: 0 0 10px whitesmoke,
+                    0 0 20px whitesmoke,
+                    0 0 30px whitesmoke;
+      margin: auto;
+      margin-top: 1900px;
+      margin-left: 200px
+    }
+
+    /* profile bio*/
+    .prof-info-bio {
+      position: absolute;
+      top : 0;
+      width: 340px;
+      height: 80px;
+      margin: auto;
+      margin-top: 1500px;
+      margin-left: 130px;
+      padding: inherit;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: -10px 15px 0px 2px rgba(0, 0, 0, 0.37);
+    }
+
+    /* hire me button*/
+    #a-href-ik {
+        position: relative;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        padding: 15px 30px;
+        color: #00FF40;
+        margin: auto;
+        margin-left: 500px;
+        margin-top: 1900px;
+        text-decoration: none;
+        font-size: 16px;
+        overflow: hidden;
+        transition: 0.2s;
+        text-shadow: 0 0 10px #00FF40, 0 0 20px #00FF40, 0 0 30px #00FF40;
+    }
+
+    #a-href-ik span{
+        position: absolute;
+        display: block;
+    }
+
+    #a-href-ik span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background:linear-gradient(90deg,transparent,green);
+
+    }
+
+    #a-href-ik:hover span:nth-child(1) {
+        left: 100%;
+        transition: 1s;
+    }
+
+    #a-href-ik span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background:linear-gradient(270deg,transparent,green);
+
+    }
+
+    #a-href-ik:hover span:nth-child(3) {
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+    }
+
+    #a-href-ik span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background:linear-gradient(180deg,transparent,green);
+
+    }
+
+    #a-href-ik:hover span:nth-child(2) {
+        top: 100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+    }
+
+    #a-href-ik span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background:linear-gradient(360deg,transparent,green);
+    }
+
+    #a-href-ik:hover span:nth-child(4) {
+        bottom: 100%;
+        transition: 1s;
+        transition-delay: 0.75s;
+    }
+
+    #a-href-ik:hover{
+        color: gray;
+        background: #00FF40;
+        transition-delay: 1s;
+        box-shadow: 0 0 10px #00FF40, 0 0 40px #00FF40, 0 0 80px #00FF40;
+    }
+
+}
