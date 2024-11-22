@@ -3,8 +3,11 @@
   cse -> black
   mech -> white
 */
-
-
+/*
+body{
+  background-color: black;
+}
+*/
 /* navbar */
 .nav-bar {
   height: 60px;
@@ -17,9 +20,9 @@
 .mr-abt{
   height: 200px;
   width : 96%;
-
+/*  color: white; */
   border-radius: 10px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.5);
 }
 
 .mr-abt h1{
@@ -37,11 +40,12 @@
   height: 600px;
   width : 96%;
   border-radius: 10px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.5);
 }
 
 .mr-edu h1{
   padding-left: 50px;
+/*  color: white;*/
   font-family: monospace;
 }
 
@@ -49,18 +53,23 @@
   margin: auto;
   margin-left: 30px;
   font-size: 80px;
+/*  color: whitesmoke;
+  text-shadow: 0 0 10px whitesmoke;*/
   font-family: monospace;
 }
 
 .mr-edu h3{
   margin: auto;
   margin-left: 50px;
+  color: #00FF40;
+  text-shadow: 0 0 10px #00FF40;
   font-family: monospace;
 }
 
 .mr-edu h4{
   margin: auto;
   margin-left: 20px;
+/*  color: white; */
   font-family: "Courier New";
 }
 
@@ -68,5 +77,111 @@
   margin: auto;
   margin-left: 70px;
   margin-top: 20px;
+  color: white;
+  font-family: monospace;
+}
+/* Mechanical */
+.mech-skl{
+  background-color: white;
+
+}
+/*  CSE */
+
+.prog-lang .prog-lang-rust .prog-lang-cc .prog-lang-cpp .prog-lang-java .prog-lang-py .prog-lang-bash .prog-lang-webtechnologies{
+  margin: auto;
+}
+
+/*  RUST  */
+.prog-lang .prog-lang-rust{
+  height: 150px;
+  width: 150px;
+  background-color: silver;
+  border-radius: 7px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/*  C  */
+.prog-lang .prog-lang-cc{
+  height: 150px;
+  width: 150px;
+  background-color: silver;
+  border-radius: 7px;
+  margin-left: 16%;
+  margin-top: -150px;
+
+}
+/*  C++  */
+.prog-lang .prog-lang-cpp{
+  height: 150px;
+  width: 150px;
+  background-color: silver;
+  border-radius: 7px;
+  margin-left: 32%;
+  margin-top: -150px;
+}
+
+/*  Java  */
+.prog-lang .prog-lang-java{
+  height: 150px;
+  width: 150px;
+  background-color: silver;
+  border-radius: 7px;
+  margin-left: 48%;
+  margin-top: -150px;
+}
+
+/*  Python  */
+.prog-lang .prog-lang-py{
+  height: 150px;
+  width: 150px;
+  background-color: silver;
+  border-radius: 7px;
+  margin-left: 64%;
+  margin-top: -150px;
+}
+
+/*  Bash  */
+.prog-lang .prog-lang-bash{
+  height: 150px;
+  width: 150px;
+  background-color: silver;
+  border-radius: 7px;
+  margin-left: 80%;
+  margin-top: -150px;
+}
+
+/*  web Technologies  */
+.prog-lang-webtechnologies{
+  height: 150px;
+  width: 250px;
+  background-color: silver;
+  border-radius: 7px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+/*  CSE-skills  */
+.cse-skl .mr-skll{
+
+}
+.cse-skl .mr-skll h1{
+  padding-left: 50px;
+  font-family: monospace;
+}
+
+.cse-skl .mr-skll h2{
+  margin: auto;
+  margin-left: 30px;
+  font-size: 80px;
+/*  color: whitesmoke;
+  text-shadow: 0 0 10px whitesmoke;*/
+  font-family: monospace;
+}
+
+.cse-skl .mr-skll h3{
+  margin: auto;
+  margin-left: 50px;
+  color: #00FF40;
+/*  text-shadow: 0 0 10px #00FF40;  */
   font-family: monospace;
 }
