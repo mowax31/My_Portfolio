@@ -17,10 +17,20 @@
 .mr-abt{
   height: 200px;
   width : 96%;
+
   border-radius: 10px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
 }
 
+.mr-abt h1{
+  padding-left: 50px;
+  font-family: monospace;
+}
+
+.mr-abt p{
+  padding-left: 30px;
+  font-size: 18px;
+}
 /* Education */
 
 .mr-edu {
@@ -28,4 +38,35 @@
   width : 96%;
   border-radius: 10px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.mr-edu h1{
+  padding-left: 50px;
+  font-family: monospace;
+}
+
+.mr-edu h2{
+  margin: auto;
+  margin-left: 30px;
+  font-size: 80px;
+  font-family: monospace;
+}
+
+.mr-edu h3{
+  margin: auto;
+  margin-left: 50px;
+  font-family: monospace;
+}
+
+.mr-edu h4{
+  margin: auto;
+  margin-left: 20px;
+  font-family: "Courier New";
+}
+
+.mr-edu p{
+  margin: auto;
+  margin-left: 70px;
+  margin-top: 20px;
+  font-family: monospace;
 }
