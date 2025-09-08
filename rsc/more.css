@@ -134,7 +134,7 @@ body{
   justify-content: center;
   align-items: center;
   padding-top: 40px;
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 /*  C  */
@@ -247,7 +247,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: auto;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-right: 50px;
   font-family: monospace;
   color: black;
@@ -259,6 +259,8 @@ body{
   width: 50%;
   background-color: aqua;
   border-radius: 20px;
+  border: 2px solid black;
+  border-color: black;
 }
 
 /*  CSE-skills  */
