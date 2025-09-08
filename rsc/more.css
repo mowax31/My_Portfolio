@@ -16,6 +16,33 @@ body{
   border-radius: 7px;
 }
 
+.nav-cont{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+}
+
+.nav-cont li{
+  flex: 1;
+  text-align: center; 
+  margin-top: 20px;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.nav-cont li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-cont li a:hover {
+  color: #00FF40;
+  text-shadow: 0 0 10px #00FF40;
+}
+
 /* About me */
 .mr-abt{
   height: 200px;
@@ -100,6 +127,16 @@ body{
   margin-left: 20px;
   margin-top: 20px;
 }
+
+.prog-lang-rust img{
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+
 /*  C  */
 .prog-lang .prog-lang-cc{
   height: 150px;
@@ -108,7 +145,15 @@ body{
   border-radius: 7px;
   margin-left: 16%;
   margin-top: -150px;
+}
 
+.prog-lang-cc img{
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 8px;
 }
 /*  C++  */
 .prog-lang .prog-lang-cpp{
@@ -118,6 +163,15 @@ body{
   border-radius: 7px;
   margin-left: 32%;
   margin-top: -150px;
+}
+
+.prog-lang-cpp img{
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 8px;
 }
 
 /*  Java  */
@@ -130,6 +184,15 @@ body{
   margin-top: -150px;
 }
 
+.prog-lang-java img{
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 3.5px;
+}
+
 /*  Python  */
 .prog-lang .prog-lang-py{
   height: 150px;
@@ -138,6 +201,15 @@ body{
   border-radius: 7px;
   margin-left: 64%;
   margin-top: -150px;
+}
+
+.prog-lang-py img{
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 3.5px;
 }
 
 /*  Bash  */
@@ -150,6 +222,15 @@ body{
   margin-top: -150px;
 }
 
+.prog-lang-bash img{
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 3.5px;
+}
+
 /*  web Technologies  */
 .prog-lang-webtechnologies{
   height: 150px;
@@ -158,6 +239,26 @@ body{
   border-radius: 7px;
   margin-top: 30px;
   margin-left: 20px;
+}
+
+.prog-lang-webtechnologies #webTech{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  padding-top: 20px;
+  padding-right: 50px;
+  font-family: monospace;
+  color: black;
+}
+
+.prog-lang-web{
+  margin: auto;
+  height: 70%;
+  width: 50%;
+  background-color: aqua;
+  border-radius: 20px;
 }
 
 /*  CSE-skills  */
@@ -185,3 +286,4 @@ body{
 /*  text-shadow: 0 0 10px #00FF40;  */
   font-family: monospace;
 }
+
