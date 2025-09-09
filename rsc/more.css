@@ -232,36 +232,1144 @@ body{
 }
 
 /*  web Technologies  */
-.prog-lang-webtechnologies{
+.prog-lang-webtechnologies {
+  /* Dimensions and base color */
   height: 150px;
   width: 250px;
-  background-color: silver;
-  border-radius: 7px;
+  background-color: #6c757d; /* A more sophisticated, slightly darker gray */
+  border-radius: 12px; /* More pronounced rounded corners */
   margin-top: 30px;
   margin-left: 20px;
-}
 
-.prog-lang-webtechnologies #webTech{
-  text-decoration: none;
+  /* Flexbox for perfect centering */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: auto;
-  padding-top: 5px;
-  padding-right: 50px;
-  font-family: monospace;
-  color: black;
+
+  /* Aesthetics */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger, softer shadow for depth */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Indicate it's clickable */
+  overflow: hidden; /* Ensures any internal elements stay within bounds */
+
+  /* Smooth transitions for interactive effects */
+  transition: all 0.3s ease-in-out;
 }
 
-.prog-lang-web{
-  margin: auto;
-  height: 70%;
-  width: 50%;
-  background-color: aqua;
-  border-radius: 20px;
-  border: 2px solid black;
-  border-color: black;
+.prog-lang-webtechnologies:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
+
+.prog-lang-webtechnologies::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-45deg);
+  transition: transform 0.5s ease;
+}
+
+.prog-lang-webtechnologies:hover::before {
+  transform: skewX(-45deg) translateX(200%);
+}
+
+.prog-lang-webtechnologies h1 {
+  /* Text styling */
+  font-family: 'Roboto', sans-serif; /* A modern, clean sans-serif font */
+  font-size: 1.8em; /* Larger, more impactful text */
+  color: #f8f9fa; /* Light, almost white text for contrast */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow for pop */
+  margin-right: 40px; /* Remove default margin */
+  padding: 0 15px; /* Add horizontal padding if needed */
+  line-height: 1.2; /* Better line spacing for two lines of text */
+  text-align: center; /* Ensures text is centered */
+  transition: color 0.3s ease-in-out; /* Smooth text color transition */
+}
+
+.prog-lang-webtechnologies:hover h1 {
+  color: #ffffff; /* Text remains white or changes to a subtle highlight if desired */
+}
+
+
+/* Overall modal container (re-used) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #f8f9fa; /* A very light gray background */
+  margin: 5% auto;
+  padding: 30px;
+  border: 1px solid #dee2e6; /* Subtle border */
+  border-radius: 12px;
+  width: 80%;
+  max-width: 900px; /* Increased max-width for better display of multiple icons */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for pop */
+  position: relative;
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  color: #333;
+  border-bottom: 2px solid #007bff; /* A clean blue line for emphasis */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Category Sections */
+.tech-category {
+  margin-bottom: 30px;
+}
+
+.category-heading {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Icon Group Styling */
+.icon-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px; /* Increased spacing for a cleaner look */
+}
+
+.icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px; /* Standardize card size */
+  width: 120px;
+  background-color: white; /* White background for the card */
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Very subtle card shadow */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.icon-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Lifts the card on hover */
+}
+
+.icon-item img {
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+/* Specific image sizes (for non-square logos) */
+.icon-item:nth-child(1) img { /* Example for Springboot */
+    max-width: 95%;
+}
+
+.icon-item:nth-child(2) img { /* Example for Django */
+    max-width: 95%;
+}
+
+.icon-item:nth-child(4) img { /* Example for JSP */
+    max-width: 95%;
+}
+
+.icon-item:nth-child(3) img { /* Example for JS */
+    max-height: 95%;
+}
+
+/* Adjustments for non-flexbox containers (if you choose to keep them) */
+.web-fw, .web-fe, .jee, .web-dbd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.web-fw div, .web-fe div, .jee div, .web-dbd div {
+  /* Using the .icon-item styles instead is recommended */
+}
+
+.web-fw img, .web-fe img, .jee img, .web-dbd img {
+    height: 100px;
+    width: auto;
+    max-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.close-it {
+  /* Remove default button styles */
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer; /* Change the cursor to a pointer to indicate it's clickable */
+  display: flex; /* Use Flexbox to center the image */
+  justify-content: center;
+  align-items: center;
+}
+
+.close-it:hover img {
+  transform: scale(1.1); /* Make the icon slightly bigger on hover */
+}
+
+/*Front-End Technologies*/
+/* Modal and modal-content styles (same as before) */
+.modal-fe {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-fe-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 2px solid black;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* New CSS for your content */
+.fe-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.fe-icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  background-color: #f0f0f0; /* Light gray background for icons */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.fe-icon-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fe-icon-item img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+/* Style for the wider images */
+.fe-icon-item.wide-img {
+  width: 200px; /* Make the wide image container larger */
+}
+
+.frontend-technologies-button {
+  height: 150px;
+  width: 250px;
+  background-color: #343a40; /* A dark, modern gray */
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  transition: all 0.3s ease-in-out;
+}
+
+.frontend-technologies-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.frontend-technologies-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-45deg);
+  transition: transform 0.5s ease;
+}
+
+.frontend-technologies-button:hover::before {
+  transform: skewX(-45deg) translateX(200%);
+}
+
+.frontend-technologies-button h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  padding-right: 50px;
+  text-align: center;
+}
+
+/* Backend Technologies */
+
+.backend-technologies-button {
+  height: 150px;
+  width: 250px;
+  background-image: linear-gradient(45deg, #1d2b45, #3c4961); /* A dark, cool-toned gradient */
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.backend-technologies-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(45deg, #2c4262, #4c5974); /* Brighter gradient on hover */
+}
+
+.backend-technologies-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-45deg);
+  transition: transform 0.5s ease;
+}
+
+.backend-technologies-button:hover::before {
+  transform: skewX(-45deg) translateX(200%);
+}
+
+
+.backend-technologies-button h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  padding-right: 50px;
+  text-align: center;
+}
+
+/*BE PAGE*/
+.page-title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.icon-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.icon-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-item img {
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+/* Data base */
+/* --- Button Design --- */
+.databases-button {
+  height: 150px;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  position: relative;
+  overflow: hidden;
+}
+
+.databases-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.databases-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-45deg);
+  transition: transform 0.5s ease;
+}
+
+.databases-button:hover::before {
+  transform: skewX(-45deg) translateX(200%);
+}
+
+.databases-button h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  margin: 0;
+  padding-left: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+/* --- Pop-up Page Content Design (Reused from previous sections) --- */
+
+.db-page-title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.db-icon-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.db-icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.db-icon-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.db-icon-item img {
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+/* Servers */
+
+/* --- Button Design --- */
+.server-technologies-button {
+  height: 150px;
+  width: 250px;
+  background-color: rgba(40, 52, 72, 0.4);
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(135deg, rgba(90, 115, 158, 0.5), rgba(40, 52, 72, 0.3));
+  position: relative;
+  overflow: hidden;
+}
+
+.server-technologies-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.server-technologies-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-45deg);
+  transition: transform 0.5s ease;
+}
+
+.server-technologies-button:hover::before {
+  transform: skewX(-45deg) translateX(200%);
+}
+
+.server-technologies-button h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.0em;
+  margin: 0;
+  padding-left: 30px;
+  text-align: center;
+  z-index: 1;
+}
+
+/* --- Pop-up Page Content Design --- */
+.ser-page-title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  border-bottom: 2px solid #007bff;
+  color: #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.ser-icon-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.ser-icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.ser-icon-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ser-icon-item img {
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+/*MObile Development*/
+
+/* --- Button Design --- */
+.mobile-application-button {
+  height: 150px;
+  width: 250px;
+  background-color: rgba(255, 0, 0, 0.4);
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(135deg, rgba(78, 55, 55, 0.908), rgba(140, 109, 109, 0.541));
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-application-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.mobile-application-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-45deg);
+  transition: transform 0.5s ease;
+}
+
+.mobile-application-button:hover::before {
+  transform: skewX(-45deg) translateX(200%);
+}
+
+.mobile-application-button h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.0em;
+  margin: 0;
+  padding-right: 40px;
+  text-align: center;
+  z-index: 1;
+}
+
+/* --- Pop-up Page Content Design --- */
+.ma-page-title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.ma-icon-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.ma-icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.ma-icon-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ma-icon-item img {
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+/* Embedded Systems */
+
+/* --- Button Design --- */
+.embedded-systems-button {
+  height: 150px;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(135deg, rgba(24, 104, 28, 0.5), rgba(112, 219, 128, 0.3));
+  position: relative;
+  overflow: hidden;
+}
+
+.embedded-systems-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.embedded-systems-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-45deg);
+  transition: transform 0.5s ease;
+}
+
+.embedded-systems-button:hover::before {
+  transform: skewX(-45deg) translateX(200%);
+}
+
+.embedded-systems-button h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.0em;
+  margin: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+/* --- Pop-up Page Content Design --- */
+
+.es-page-title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.es-icon-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* New, specific styling for the larger Raspberry Pi items */
+.es-icon-item-large {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  width: 320px;
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  gap: 10px;
+  padding: 5px;
+}
+
+.es-icon-item-large:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.es-icon-item-large img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* New, specific styling for the smaller icons */
+.es-icon-item-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  width: 220px;
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.es-icon-item-small:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.es-icon-item-small img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/*Game Development*/
+
+/* --- Button Design --- */
+.game-development-button {
+  height: 150px;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  position: relative;
+  overflow: hidden;
+}
+
+.game-development-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.game-development-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-45deg);
+  transition: transform 0.5s ease;
+}
+
+.game-development-button:hover::before {
+  transform: skewX(-45deg) translateX(200%);
+}
+
+.game-development-button h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+/* --- Pop-up Page Content Design --- */
+
+.gd-page-title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.gd-icon-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Specific styling for wide and square icons */
+.gd-icon-item-wide, .gd-icon-item-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.gd-icon-item-wide {
+  height: 170px;
+  width: 370px;
+}
+
+.gd-icon-item-square {
+  height: 170px;
+  width: 170px;
+}
+
+.gd-icon-item-wide img, .gd-icon-item-square img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.gd-icon-item-wide:hover, .gd-icon-item-square:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tools */
+
+/* --- Button Design --- */
+.tools-button {
+  height: 150px;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  position: relative;
+  overflow: hidden;
+}
+
+.tools-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tools-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-45deg);
+  transition: transform 0.5s ease;
+}
+
+.tools-button:hover::before {
+  transform: skewX(-45deg) translateX(200%);
+}
+
+.tools-button h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+/* --- Pop-up Page Content Design --- */
+.tols-page-title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.tols-icon-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Specific styling for different container sizes */
+.tols-icon-item, .tols-icon-item-wide, .tols-icon-item-tall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.tols-icon-item {
+  height: 170px;
+  width: 170px;
+}
+
+.tols-icon-item-wide {
+  height: 140px;
+  width: 170px;
+}
+
+.tols-icon-item-tall {
+  height: 220px;
+  width: 220px;
+}
+
+.tols-icon-item img, .tols-icon-item-wide img, .tols-icon-item-tall img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.tols-icon-item:hover, .tols-icon-item-wide:hover, .tols-icon-item-tall:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Operating Systems*/
+/* --- Button Design --- */
+.operating-systems-button {
+  height: 150px;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  position: relative;
+  overflow: hidden;
+}
+
+.operating-systems-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.operating-systems-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-45deg);
+  transition: transform 0.5s ease;
+}
+
+.operating-systems-button:hover::before {
+  transform: skewX(-45deg) translateX(200%);
+}
+
+.operating-systems-button h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+/* --- Pop-up Page Content Design --- */
+.os-page-title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.os-icon-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.os-icon-group p {
+  width: 100%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.os-gnul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Specific styling for different container sizes */
+.os-icon-item-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  width: 170px;
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.os-icon-item-wide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  width: 270px;
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.os-icon-item-square:hover, .os-icon-item-wide:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.os-icon-item-square img, .os-icon-item-wide img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 
 /*  CSE-skills  */
 .cse-skl .mr-skll{
@@ -289,3 +1397,29 @@ body{
   font-family: monospace;
 }
 
+.orgz button{
+  display: inline;
+}
+/*  Certification   */
+.certi-in {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.certi-in h1 {
+    text-align: center;
+}
+
+.certi-in img {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.certi-in img:hover {
+    transform: scale(1.05);
+}

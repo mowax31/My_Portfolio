@@ -106,186 +106,335 @@
               <img src="./img/logo/bash.png" alt="Bash" height="80px" width="80px">
               </center>
             </div>
-            <button class="prog-lang-webtechnologies">
+
+    <div class="orgz">
+            <button class="prog-lang-webtechnologies" id="open-web-tech">
               <center>
-              <a href="Webtechnologies" id="webTech"><h1>Web Technologies</h1></a>
+              <h1 id="webTech">Web Technologies</h1>
               </center>
+          </button>
+
+           <div id="web-tech-modal" class="modal">
+              <div class="modal-content">
+                <button class="close-it" id="close-web-tech">
+                  <img src="./img/Close.png" alt="Close" height="30px" width="30px" transition: transform 0.2s ease-in-out;>
+                </button>
+        
+              <h3 class="page-title">Web Technologies</h3>
+
+              <div class="tech-category">
+                <h4 class="category-heading">Web Frameworks</h4>
+              <div class="icon-group">
+                <div class="icon-item"><img src="./img/logo/Springboot.png" alt="Springboot"></div>
+                <div class="icon-item"><img src="./img/logo/django.jpg" alt="Django"></div>
+              </div>
+              </div>
+
+          <div class="tech-category">
+            <h4 class="category-heading">Front-End Technologies</h4>
+            <div class="icon-group">
+                <div class="icon-item"><img id="htmlx" src="./img/logo/html.jpg" alt="HTML"></div>
+                <div class="icon-item"><img id="cxx" src="./img/logo/css.png" alt="CSS"></div>
+                <div class="icon-item"><img id="jsk" src="./img/logo/js.png" alt="JS"></div>
+                <div class="icon-item"><img id="jsp" src="./img/logo/jsp.png" alt="JSP"></div>
+            </div>
+          </div>
+        
+          <div class="tech-category">
+            <h4 class="category-heading">Java Enterprise Edition</h4>
+            <div class="icon-group">
+                <div class="icon-item"><img id="jee" src="./img/logo/j2ee.png" alt="J2EE"></div>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h4 class="category-heading">Databases</h4>
+            <div class="icon-group">
+                <div class="icon-item"><img id="hql" src="./img/logo/hql.jpeg" alt="HQL"></div>
+                <div class="icon-item"><img id="sqlmy" src="./img/logo/mysql.png" alt="Mysql"></div>
+                <div class="icon-item"><img id="mdb" src="./img/logo/mongodb.png" alt="MongoDB"></div>
+            </div>
+          </div>
+        </div>
+</div>
+           <!-- Rust, C/C++, Java, Python,BASH, Web-Technologies -->
+
+    <button class="frontend-technologies-button" id="open-fe-tech">
+      <center><h3>Front-End Technologies</h3></center>
+  </button>
+
+    <div id="fe-tech-modal" class="modal-fe">
+  <div class="modal-fe-content">
+    <button class="close-it" id="close-fe-tech">
+      <img src="./img/Close.png" alt="Close" height="30px" width="30px">
+    </button>
+    <h3>Front-End Technologies</h3>
+    <div class="fe-icons-container">
+        <div class="fe-icon-item">
+          <img src="./img/logo/html.jpg" alt="HTML">
+        </div>
+        <div class="fe-icon-item">
+          <img src="./img/logo/css.png" alt="CSS">
+        </div>
+        <div class="fe-icon-item">
+          <img src="./img/logo/js.png" alt="JS">
+        </div>
+        <div class="fe-icon-item wide-img">
+          <img src="./img/logo/rjs.jpg" alt="ReactJS">
+        </div>
+        <div class="fe-icon-item wide-img">
+          <img src="./img/logo/rn.png" alt="ReactNative">
+        </div>
+        <div class="fe-icon-item wide-img">
+          <img src="./img/logo/jsp.png" alt="JSP">
+        </div>
+    </div>
+  </div>
+</div>
+          <!-- HTML, CSS, JS, ReactJS, ReactNative, JSP --> 
+
+            <button class="backend-technologies-button" id="open-be-tech">
+              <h3>Back-End Technologies</h3>
             </button>
 
-            <div class="prog-lang-web">
-              <button>
-                <img id="sb" src="./img/logo/Springboot.png" alt="Springboot" height="150px" width="250px">
-              </button> 
-              <button>
-                <img id="dj" src="./img/logo/django.jpg" alt="Django" height="150px" width="250px"> 
-              </button> <br>
-              <button>
-                <img id="htmlx" src="./img/logo/html.jpg" alt="HTML" height="100px" width="100px">
-              </button> 
-              <button>
-                <img id="cxx" src="./img/logo/css.png" alt="CSS" height="80px" width="80px">
-              </button>  
-              <button>
-                <img id="jsk" src="./img/logo/js.png" alt="JS" height="80px" width="80px">
-              </button>              
-              <button>
-                <img id="jsp" src="./img/logo/jsp.png" alt="JSP" height="80px" width="200px"> 
-              </button> <br>        
-              <button>
-                <img id="jee" src="./img/logo/j2ee.png" alt="J2EE" height="100px" width="100px"> 
-              </button> <br>            
-              <button>
-                <img id="hql" src="./img/logo/hql.jpeg" alt="HQL" height="100px" width="100px">
-              </button>               
-              <button>
-                <img id="sqlmy" src="./img/logo/mysql.png" alt="Mysql" height="100px" width="100px">
-              </button>              
-              <button>
-                <img id="mdb" src="./img/logo/mongodb.png" alt="MongoDB" height="100px" width="100px">
-              </button>               
-            </div>
-            Rust, C/C++, Java, Python,BASH, Web-Technologies
+            <div id="be-tech-modal" class="modal">
+    <div class="modal-content">
+        <button class="close-it" id="close-be-tech">
+            <img src="./img/Close.png" alt="Close" height="30px" width="30px">
+        </button>
+        
+        <h3 class="page-title">Back-End Technologies</h3>
 
-            <h3> Front-End Technologies</h3>
-            <div class="fet-html">
-              <img src="./img/logo/html.jpg" alt="HTML" height="100px" width="100px">
+        <div class="icon-group">
+            <div class="icon-item">
+                <img src="./img/logo/Springboot.png" alt="Springboot">
             </div>
-            <div class="fet-css">
-              <img src="./img/logo/css.png" alt="CSS" height="80px" width="80px">
+            <div class="icon-item">
+                <img src="./img/logo/django.jpg" alt="Django">
             </div>
-            <div class="fet-js">
-              <img src="./img/logo/js.png" alt="JS" height="80px" width="80px">
+            <div class="icon-item">
+                <img src="./img/logo/flask.jpg" alt="Flask">
             </div>
-            <div class="fet-rjs">
-              <img src="./img/logo/rjs.jpg" alt="ReactJS" height="150px" width="280px">
-            </div>
-            <div class="fet-rn">
-              <img src="./img/logo/rn.png" alt="ReactNative" height="150px" width="250px">
-            </div>
-            <div class="fet-jsp">
-              <img src="./img/logo/jsp.png" alt="JSP" height="80px" width="200px">
-            </div>
-            HTML, CSS, JS, ReactJS, ReactNative, JSP
+        </div>
+    </div>
+</div>
 
-            <h3>Back-End Technologies</h3>
-            <div class="bet-SpringBoot">
-              <img src="./img/logo/Springboot.png" alt="Springboot" height="150px" width="250px">
-            </div>
-            <div class="bet-Django">
-              <img src="./img/logo/django.jpg" alt="Django" height="150px" width="250px">
-            </div>
-            <div class="bet-Flask">
-              <img src="./img/logo/flask.jpg" alt="Flask" height="150px" width="220px">
-            </div>
+<!-- MongoDB, Mysql, HQL -->
 
-            <h3>Databases</h3>
-            <div class="db-mdb">
-              <img src="./img/logo/mongodb.png" alt="MongoDB" height="100px" width="100px">
-            </div>
-            <div class="db-mysql">
-              <img src="./img/logo/mysql.png" alt="Mysql" height="100px" width="100px">
-            </div>
-            <div class="db-hql">
-              <img src="./img/logo/hql.jpeg" alt="HQL" height="100px" width="100px">
-            </div>
-            MongoDB, Mysql, HQL
+<button class="databases-button" id="open-db-tech">
+    <h3>DataBase</h3>
+</button>
 
-            <h3>Server</h3>
-            <div class="ser-AWS">
-              <img src="./img/logo/amazon_aws.png" alt="Amazon AWS" height="150px" width="150px">
-            </div>
-            <div class="ser-Azure">
-              <img src="./img/logo/Azure.jpg" alt="Azure" height="150px" width="150px">
-            </div>
-            <div class="ser-firb">
-              <img src="./img/logo/firebase.png" alt="Fire Base" height="150px" width="150px">
-            </div>
-            Azure, Firebase
+<div id="db-tech-modal" class="modal">
+    <div class="modal-content">
+        <button class="close-it" id="close-db-tech">
+            <img src="./img/Close.png" alt="Close" height="30px" width="30px">
+        </button>
+        
+        <h3 class="db-page-title">Databases</h3>
 
-            <h3>Mobile Application</h3>
-            <div class="mad-rn">
-              <img src="./img/logo/rn.png" alt="React Native" height="150px" width="250px">
+        <div class="db-icon-group">
+            <div class="db-icon-item">
+                <img src="./img/logo/mongodb.png" alt="MongoDB">
             </div>
-            React Native
+            <div class="db-icon-item">
+                <img src="./img/logo/mysql.png" alt="Mysql">
+            </div>
+            <div class="db-icon-item">
+                <img src="./img/logo/hql.jpeg" alt="HQL">
+            </div>
+        </div>
+    </div>
+</div>
 
-            <h3>Embedded Systems</h3>
-            <div class="es-rpi">
-              <div class="es-rpi-pico">
+<!--  Firebase -->
+            <button class="server-technologies-button" id="open-ser-tech">
+    <h3>Server</h3>
+</button>
 
-              </div>
-              <div class="es-rpi-zero">
+<div id="ser-tech-modal" class="modal">
+    <div class="modal-content">
+        <button class="close-it" id="close-ser-tech">
+            <img src="./img/Close.png" alt="Close" height="30px" width="30px">
+        </button>
+        
+        <h3 class="ser-page-title">Server</h3>
 
-              </div>
+        <div class="ser-icon-group">
+            <div class="ser-icon-item">
+                <img src="./img/logo/firebase.png" alt="Fire Base">
             </div>
-            <div class="es-ards">
+        </div>
+    </div>
+</div>
+            
+<!-- React Native -->
+            <button class="mobile-application-button" id="open-ma-tech">
+    <h3>Mobile Application</h3>
+</button>
 
-            </div>
-            <div class="es-mc">
+<div id="ma-tech-modal" class="modal">
+    <div class="modal-content">
+        <button class="close-it" id="close-ma-tech">
+            <img src="./img/Close.png" alt="Close" height="30px" width="30px">
+        </button>
+        
+        <h3 class="ma-page-title">Mobile Application</h3>
 
+        <div class="ma-icon-group">
+            <div class="ma-icon-item">
+                <img src="./img/logo/rn.png" alt="React Native">
             </div>
-            <div class="es-arm">
+        </div>
+    </div>
+</div>
+          
+<!-- Raspberry pi(pico and zero), Arduino systems, microcontroller 8051, ARM(Procressor) -->
+    <button class="embedded-systems-button" id="open-es-tech">
+    <h3>Embedded Systems</h3>
+</button>
 
-            </div>
-            Raspberry pi(pico and zero), Arduino systems, microcontroller 8051, ARM(Procressor)
+<div id="es-tech-modal" class="modal">
+    <div class="modal-content">
+        <button class="close-it" id="close-es-tech">
+            <img src="./img/Close.png" alt="Close" height="30px" width="30px">
+        </button>
+        
+        <h3 class="es-page-title">Embedded Systems</h3>
 
-            <h3>Game Development</h3>
-            <div class="gd-ge">
-              <img src="./img/logo/godot.png" alt="Godot Engine" height="150px" width="350px">
+        <div class="es-icon-group">
+                <div class="es-icon-item-small">
+                    <img src="./img/cse/pico.jpeg" alt="Pico" height="300px" width="300px">
+                </div>
+                <div class="es-icon-item-small">
+                    <img src="./img/cse/zerowH.png" alt="Zero w H" height="300px" width="300px">
+                </div>
+            <div class="es-icon-item-small">
+                <img src="./img/cse/Uno.png" alt="UNO" height="200px" width="200px">
             </div>
-            <div class="gd-ue">
-              <img src="./img/logo/ue.png" alt="Unreal Engine" height="150px" width="150px">
+            <div class="es-icon-item-small">
+                <img src="./img/cse/8051.png" alt="8051" height="200px" width="200px">
             </div>
-            Godot Engine(gdScripts), UnrealEngine(C++ & Blueprints);
+            <div class="es-icon-item-small">
+                <img src="./img/cse/ARM.png" alt="ARM" height="200px" width="200px">
+            </div>
+        </div>
+    </div>
+</div>
+            
+<!-- Godot Engine(gdScripts), UnrealEngine(C++ & Blueprints); -->
+<button class="game-development-button" id="open-gd-tech">
+    <h3>Game Development</h3>
+</button>
 
-            <h3>Tools</h3>
-            <div class="tols-llvm">
-              <img src="./img/logo/llvm.jpeg" alt="LLVM" height="120px" width="150px">
-            </div>
-            <div class="tols-flex">
+<div id="gd-tech-modal" class="modal">
+    <div class="modal-content">
+        <button class="close-it" id="close-gd-tech">
+            <img src="./img/Close.png" alt="Close" height="30px" width="30px">
+        </button>
+        
+        <h3 class="gd-page-title">Game Development</h3>
 
+        <div class="gd-icon-group">
+            <div class="gd-icon-item-wide">
+                <img src="./img/logo/godot.png" alt="Godot Engine" height="150px" width="350px">
             </div>
-            <div class="tols-bison">
+            <div class="gd-icon-item-square">
+                <img src="./img/logo/ue.png" alt="Unreal Engine" height="150px" width="150px">
+            </div>
+        </div>
+    </div>
+</div>
+            
+<!-- LLVM, flex & bison, Git & Github, Docker, RPA-->
+            <button class="tools-button" id="open-tols-tech">
+    <h3>Tools</h3>
+</button>
 
-            </div>
-            <div class="tols-git">
-              <img src="./img/logo/github.jpg" alt="Github">
-            </div>
-            <div class="tols-doc">
-              <img src="./img/logo/docker.png" alt="Docker">
-            </div>
-            <div class="tols-rpa">
-              <img src="./img/logo/rpa.jpeg" alt="Ui Path" height="150px" width="150px">
-            </div>
-            LLVM, flex & bison, Git & Github, Docker, RPA
+<div id="tols-tech-modal" class="modal">
+    <div class="modal-content">
+        <button class="close-it" id="close-tols-tech">
+            <img src="./img/Close.png" alt="Close" height="30px" width="30px">
+        </button>
+        
+        <h3 class="tols-page-title">Tools</h3>
 
-            <h3>Operating systems</h3>
+        <div class="tols-icon-group">
+            <div class="tols-icon-item-wide">
+                <img src="./img/logo/llvm.jpeg" alt="LLVM" height="120px" width="150px">
+            </div>
+            <div class="tols-icon-item-tall">
+                <img src="./img/cse/flex.png" alt="Flex" height="200px" width="200px">
+            </div>
+            <div class="tols-icon-item-tall">
+                <img src="./img/cse/bison.png" alt="bison" height="200px" width="200px">
+            </div>
+            <div class="tols-icon-item">
+                <img src="./img/logo/github.jpg" alt="Github">
+            </div>
+            <div class="tols-icon-item">
+                <img src="./img/logo/docker.png" alt="Docker">
+            </div>
+            <div class="tols-icon-item-tall">
+                <img src="./img/logo/rpa.jpeg" alt="Ui Path" height="150px" width="150px">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+           <button class="operating-systems-button" id="open-os-tech">
+    <h3>Operating systems</h3>
+</button>
+
+<div id="os-tech-modal" class="modal">
+    <div class="modal-content">
+        <button class="close-it" id="close-os-tech">
+            <img src="./img/Close.png" alt="Close" height="30px" width="30px">
+        </button>
+        
+        <h3 class="os-page-title">Operating systems</h3>
+        
+        <div class="os-icon-group">
             <div class="os-gnul">
-              <div class="os-gnul-rh">
-                <img src="./img/logo/rhel.png" alt="RedHat Linux">
-              </div>
-              <div class="os-gnul-arch">
-                <img src="./img/logo/arch.png" alt="Arch Linux" height="150px" width="150px">
-              </div>
-              <div class="os-gnul-ubuntu">
-                <img src="./img/logo/ubuntu.png" alt="Ubuntu" height="150px" width="150px">
-              </div>
+                <div class="os-icon-item-square">
+                    <img src="./img/logo/rhel.png" alt="RedHat Linux" height="150px" width="150px">
+                </div>
+                <div class="os-icon-item-square">
+                    <img src="./img/logo/arch.png" alt="Arch Linux" height="150px" width="150px">
+                </div>
+                <div class="os-icon-item-square">
+                    <img src="./img/logo/ubuntu.png" alt="Ubuntu" height="150px" width="150px">
+                </div>
             </div>
-            GNU/Linux -> Redhat, Arch, Ubuntu(Debian) //certificate
-            <div class="os-lix-Kernal">
-              <img src="./img/logo/linux.jpg" alt="Linux Kernel" height="150px" width="250px">
+            <p>also I have some Experience in Linux Kernal systems and LFS(Linux from Scarch)</p>
+            <div class="os-icon-item-wide">
+                <img src="./img/logo/linux.jpg" alt="Linux Kernel" height="150px" width="250px">
             </div>
-            <div class="os-lix-LFS">
-              <img src="./img/logo/gnu.png" alt="GNU/Linux">
+            <div class="os-icon-item-square">
+                <img src="./img/logo/gnu.png" alt="GNU/Linux" height="150px" width="150px">
             </div>
-            also i have some Experience in Linux Kernal systems and LFS(Linux from Scarch)
+        </div>
+    </div>
+</div>
+            
+
+
+</div>  
+
 
             <h2 id="mr-cer">Certifications</h2>
             <hr>
-            <h3>Red hat Linux</h3>
-            <img src="img/cse/certi/rh.jpeg" alt="RH124" height="200px" width="300px"> <br> <br>
-            <h3>Robotic Process Automations</h3>
-            <img src="img/cse/certi/rpa.jpeg" alt="RPA" height="200px" width="300px"> <br> <br>
-
+            <div class="certi-in">
+            <div class="rh8c">
+            <h3>Red hat Linux</h3> <br>
+            <img src="img/cse/certi/rh.jpeg" alt="RH124" height="200px" width="300px">
+            </div> <br> <br>
+            <div class="rpa">
+            <h3>Robotic Process Automations</h3> <br>
+            <img src="img/cse/certi/rpa.jpeg" alt="RPA" height="200px" width="300px"> </div><br> <br>
+            </div>
             </div>cse/
               </div>
 
@@ -527,6 +676,5 @@
 
   </body>
 
-  <script>
-  </script>
+<script src="./more.js"></script>
 </html>
