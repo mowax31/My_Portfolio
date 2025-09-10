@@ -1,3 +1,11 @@
+/*
+*
+*
+* Computer Science
+*
+*
+*/
+
 // WebTechnologies PopUP Scripts
 // WT
 const modal = document.getElementById('web-tech-modal');
@@ -186,3 +194,163 @@ window.onclick = function(event) {
     osModal.style.display = "none";
   }
 }
+
+/*
+*
+*
+* Mechanical Engineering
+*
+*
+*/
+//Design Softwares
+const dsModal = document.getElementById('ds-tech-modal');
+const openDsBtn = document.getElementById('open-ds-tech');
+const closeDsBtn = document.getElementById('close-ds-tech');
+//mec
+const machinesModal = document.getElementById('machines-tech-modal');
+const openMachinesBtn = document.getElementById('open-machines-tech');
+const closeMachinesBtn = document.getElementById('close-machines-tech');
+//SP
+const specialMachinesModal = document.getElementById('special-machines-tech-modal');
+const openSpecialMachinesBtn = document.getElementById('open-special-machines-tech');
+const closeSpecialMachinesBtn = document.getElementById('close-special-machines-tech');
+
+
+// Open
+openDsBtn.onclick = function() {
+  dsModal.style.display = "block";
+}
+
+openMachinesBtn.onclick = function() {
+  machinesModal.style.display = "block";
+}
+
+openSpecialMachinesBtn.onclick = function() {
+  specialMachinesModal.style.display = "block";
+}
+
+
+//Close
+closeDsBtn.onclick = function() {
+  dsModal.style.display = "none";
+}
+
+closeMachinesBtn.onclick = function() {
+  machinesModal.style.display = "none";
+}
+
+closeSpecialMachinesBtn.onclick = function() {
+  specialMachinesModal.style.display = "none";
+}
+
+
+//OnClick
+window.onclick = function(event) {
+  if (event.target == dsModal) {
+    dsModal.style.display = "none";
+  }
+}
+
+window.onclick = function(event) {
+  if (event.target == machinesModal) {
+    machinesModal.style.display = "none";
+  }
+}
+
+window.onclick = function(event) {
+  if (event.target == specialMachinesModal) {
+    specialMachinesModal.style.display = "none";
+  }
+}
+
+/**
+ * Projects
+ * 1. CSE
+ * 2. mechanical
+ * 
+ */
+// OS
+const osProjectModal = document.getElementById('os-project-modal');
+const openOsProjectBtn = document.getElementById('open-os-project-modal');
+const closeOsProjectBtn = document.getElementById('close-os-project-modal');
+//PL
+const progLangModal = document.getElementById('prog-lang-modal');
+const openProgLangBtn = document.getElementById('open-prog-lang-modal');
+const closeProgLangBtn = document.getElementById('close-prog-lang-modal');
+// 2D
+const modal2d = document.getElementById('2d-game-modal');
+const btn2d = document.getElementById('open-2d-game-modal');
+const close2d = document.getElementById('close-2d-game-modal');
+//3D
+const modal3d = document.getElementById('3d-game-modal');
+const btn3d = document.getElementById('open-3d-game-modal');
+const close3d = document.getElementById('close-3d-game-modal');
+//HMS
+const hmsModal = document.getElementById('hms-modal');
+const openHmsBtn = document.getElementById('open-hms-modal');
+const closeHmsBtn = document.getElementById('close-hms-modal');
+//MBS
+const bbsModal = document.getElementById('bbs-modal');
+const openBbsBtn = document.getElementById('open-bbs-modal');
+const closeBbsBtn = document.getElementById('close-bbs-modal');
+//AG
+const agModal = document.getElementById('ag-modal');
+const openAgModalBtn = document.getElementById('open-ag-modal');
+const closeAgModalBtn = document.getElementById('close-ag-modal');
+
+
+openOsProjectBtn.onclick = () => { osProjectModal.style.display = "block"; };
+openProgLangBtn.onclick = () => { progLangModal.style.display = 'block'; };
+btn2d.onclick = () => { modal2d.style.display = 'block'; };
+btn3d.onclick = () => { modal3d.style.display = 'block'; };
+openHmsBtn.onclick = () => { hmsModal.style.display = 'block'; };
+openBbsBtn.onclick = () => { bbsModal.style.display = 'block'; };
+openAgModalBtn.onclick = () => {
+    agModal.style.display = 'block';
+};
+
+closeOsProjectBtn.onclick = () => { osProjectModal.style.display = "none"; };
+closeProgLangBtn.onclick = () => { progLangModal.style.display = 'none'; };
+close2d.onclick = () => { modal2d.style.display = 'none'; };
+close3d.onclick = () => { modal3d.style.display = 'none'; };
+closeHmsBtn.onclick = () => { hmsModal.style.display = 'none'; };
+closeBbsBtn.onclick = () => { bbsModal.style.display = 'none'; };
+closeAgModalBtn.onclick = () => {
+    agModal.style.display = 'none';
+};
+
+window.onclick = function(event) {
+  if (event.target == osProjectModal) {
+    osProjectModal.style.display = "none";
+  }
+}
+
+window.onclick = (event) => {
+  if (event.target.classList.contains('modal')) {
+     event.target.style.display = 'none';
+  }
+};
+
+window.onclick = (event) => {
+  if (event.target.classList.contains('modal')) {
+    event.target.style.display = 'none';
+  }
+};
+
+window.onclick = (event) => {
+  if (event.target.classList.contains('modal')) {
+    event.target.style.display = 'none';
+   }
+};
+
+window.onclick = (event) => {
+  if (event.target.classList.contains('modal')) {
+  event.target.style.display = 'none';
+  }
+};
+
+window.onclick = (event) => {
+    if (event.target === agModal) {
+        agModal.style.display = 'none';
+    }
+};
